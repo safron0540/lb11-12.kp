@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карточки товаров</title>
+
+    <link href="bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+        .custom-header {
+            background-color: #ffffff !important;
+            border-bottom: solid blue 2px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        }
+
+        .nav-link {
+            transition: color 0.2s ease;
+        }
+
+        .nav-link:hover {
+            color: blue !important;
+        }
+
+        .custom-footer {
+            background-color: #f8f9fa;
+            border-top: solid blue 2px;
+            box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.03);
+        }
+
+        .my-column {
+            width: 33%;
+            padding: 15px;
+        }
+
+        .card .btn-primary {
+
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card .btn-primary:hover {
+            background-color: #004ad6 !important;
+            transform: scale(1.03);
+            box-shadow: 0 4px 8px rgba(13, 110, 253, 0.3);
+        }
+
+        .card {
+            height: 100%; /* карточки одной высоты */
+        }
+
+        .card-img-top {
+            height: 220px; 
+            object-fit: cover; /*сохранение пропорции изображения*/
+        }
+
+        @media screen and (max-width: 1240px) {
+            .my-column {
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .my-column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg custom-header">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-3" href="index.html">Мой сайт</a>
+            <div class="collapse navbar-collapse d-flex">
+                <div class="navbar-nav ms-auto align-items-center">
+                    <a class="nav-link fs-4" href="index.html">Главная</a>
+                    <a class="nav-link fs-4 text-primary" href="prod.html">Карточки товаров</a>
+                    <a class="nav-link fs-4" href="">О нас</a>
+                    <a class="btn btn-primary fs-4 m-3" href="about.html">Написать нам</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-5">
+        <h2 class="text-center mb-4">Наши товары</h2>
+        <div class="row">
+
+            <div class="my-column">
+                <div class="card" style="width: 100%;">
+                    <img class="card-img-top" src="photo/images.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text"> Описание товара №1 </p>
+                        <button type="button" class="btn btn-primary">Купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-column">
+                <div class="card" style="width: 100%;">
+                    <img class="card-img-top" src="photo/vibrant-neon-contours-stockcake.webp" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text"> Описание товара №2 </p>
+                        <button type="button" class="btn btn-primary">Купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-column">
+                <div class="card" style="width: 100%;">
+                    <img class="card-img-top" src="photo/images.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text"> Описание товара №3 </p>
+                        <button type="button" class="btn btn-primary">Купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-column">
+                <div class="card" style="width: 100%;">
+                    <img class="card-img-top" src="photo/vibrant-neon-contours-stockcake.webp" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text"> Описание товара №4 </p>
+                        <button type="button" class="btn btn-primary">Купить</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="custom-footer py-4 mt-5">
+        <div class="container text-center">
+            <h5 class="mb-1">Футер</h5>
+            <p class="text-muted small mb-0">© 2026 Мой Сайт. Все права защищены. | Поддержка: info@mysite.ru</p>
+        </div>
+    </footer>
+
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

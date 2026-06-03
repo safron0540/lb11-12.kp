@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Написать нам</title>
+    
+    <link href="bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .custom-header {
+            background-color: #ffffff !important;
+            border-bottom: solid blue 2px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        }
+        .nav-link {
+            transition: color 0.2s ease;
+        }
+        .nav-link:hover {
+            color: blue !important;
+        }
+        .custom-footer {
+            background-color: #f8f9fa;
+            border-top: solid blue 2px;
+            box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.03);
+        }
+
+        form {
+            max-width: 650px; 
+            margin: 0 auto; 
+            padding: 30px; 
+            background-color: #ffffff; 
+            border: 1px solid #dee2e6; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
+        }
+    </style>
+</head>
+
+<body class="bg-light"> 
+    <nav class="navbar navbar-expand-lg custom-header">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-3" href="index.html">Мой сайт</a>
+            <div class="collapse navbar-collapse d-flex">
+                <div class="navbar-nav ms-auto align-items-center">
+                    <a class="nav-link fs-4" href="index.html">Главная</a>
+                    <a class="nav-link fs-4" href="prod.html">Карточки товаров</a>
+                    <a class="nav-link fs-4" href="">О нас</a>
+                    <a class="btn btn-primary fs-4 m-3" href="about.html">Написать нам</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-5">
+        <h2 class="text-center mb-4">Форма обратной связи</h2>
+        
+        <form>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Сообщение</label>
+                <textarea class="form-control" rows="4"></textarea>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Подписаться на рассылку</label>
+            </div>
+            <button type="submit" class="btn btn-primary w-100 py-2">Отправить</button>
+        </form>
+    </main>
+
+    <footer class="custom-footer py-4 mt-5">
+        <div class="container text-center">
+            <h5 class="mb-1">Футер</h5>
+            <p class="text-muted small mb-0">© 2026 Мой Сайт. Все права защищены. | Поддержка: info@mysite.ru</p>
+        </div>
+    </footer >
+
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
