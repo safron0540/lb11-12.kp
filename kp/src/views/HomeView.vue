@@ -114,6 +114,18 @@ export default {
   padding: 15px;
 }
 
+@media screen and (max-width: 1240px) {
+  .my-column {
+    width: 50% !important;
+  }
+}
+
+@media screen and (width <= 768px) {
+  .my-column {
+    width: 100% !important;
+  }
+}
+
 .my-column > div {
   height: 100%; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;

@@ -132,16 +132,18 @@ export default {
     totalPrice() {
       let total = 0
       this.store.cart.forEach(item => {
-        total += Number(item.price || 0)
+        total += Number(item.price)
       })
-      return total.toFixed(2)
+      return total
     }
   },
   methods: {
-    makeOrder() {
-      if (this.store.cart.length > 0) {
+    async makeOrder() {
+      if (this.store.cart.length === 0) return
+
+      const isSent = await this.store.sendOrder()
+      if (isSent) {
         this.success = true
-        this.store.cart = [] 
       }
     }
   }
